@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffffde; /* Fundo escuro mais suave */
+    color: #000000;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-color: #000000; }
+    50% { background-color: #ffffff; }
+    100% { background-color: #ffffff; }
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: backgroundAnimation 5s ease infinite;
+    z-index: -1;
+    background: linear-gradient(45deg, #333, #444); /* Gradiente escuro para combinar com a logo */
+}
+
+.logo {
+    max-width: 220px;
+    margin-bottom: 30px;
+}
+
+.animated-button {
+    background-color: #ffcc00; /* Amarelo mais suave */
+    color: #000;
+    border-radius: 50px;
+    padding: 20px;
+    font-size: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    margin: 10px auto;
+}
+
+.animated-button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgb(255, 136, 0);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00000091;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+footer a:hover {
+    color: #fff;
+}
