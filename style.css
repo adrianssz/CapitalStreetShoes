@@ -67,3 +67,56 @@ footer a {
 footer a:hover {
     color: #fff;
 }
+
+/* Estilização do novo Footer Estilo Streetwear */
+.street-title {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+    /* Efeito de Gradiente no Texto */
+    background: linear-gradient(90deg, #ffcc00, #ff8800, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.street-subtitle {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+.footer-divider {
+    width: 50px;
+    height: 2px;
+    background-color: #ffcc00;
+    margin: 15px auto;
+    opacity: 0.5;
+}
+
+/* Ajuste no container do footer para caber tudo */
+footer {
+    background-color: rgba(0, 0, 0, 0.9) !important; /* Um pouco mais escuro para destacar o texto */
+    padding: 30px 0 !important;
+}
+
+.credit-text {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Ajuste mobile */
+@media (max-width: 768px) {
+    .street-title {
+        font-size: 1.4rem;
+    }
+    .street-subtitle {
+        font-size: 0.85rem;
+        padding: 0 15px;
+    }
+}
+
