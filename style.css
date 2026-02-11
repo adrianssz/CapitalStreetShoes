@@ -49,14 +49,13 @@ body {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    /* Removido position absolute */
     width: 100%;
-    background-color: #00000091;
+    background-color: #050505 !important; 
     color: #fff;
-    padding: 15px 0;
+    padding: 40px 0 !important;
     font-size: 14px;
+    margin-top: 30px; /* Garante que nunca encoste nos botões */
 }
 
 footer a {
@@ -68,34 +67,32 @@ footer a:hover {
     color: #fff;
 }
 
-/* Estilização do novo Footer Estilo Streetwear */
+/* Nova frase com degradê Street (Verde Água para Azul) */
 .street-title {
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-bottom: 5px;
-    font-size: 1.8rem;
-    /* Efeito de Gradiente no Texto */
-    background: linear-gradient(90deg, #ffcc00, #ff8800, #00d4ff);
+    font-size: 1.7rem;
+    background: linear-gradient(90deg, #00f2fe, #4facfe, #ffcc00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .street-subtitle {
-    color: #b0b0b0;
-    font-size: 0.95rem;
-    font-weight: 300;
-    max-width: 600px;
+    color: #888;
+    font-size: 0.9rem;
+    max-width: 80%;
     margin: 0 auto;
-    line-height: 1.4;
 }
 
 .footer-divider {
-    width: 50px;
+    width: 40px;
     height: 2px;
-    background-color: #ffcc00;
+    background-color: #4facfe; /* Cor combinando com o novo degradê */
     margin: 15px auto;
-    opacity: 0.5;
+    border: none;
+    opacity: 0.8;
 }
 
 /* Ajuste no container do footer para caber tudo */
@@ -119,4 +116,5 @@ footer {
         padding: 0 15px;
     }
 }
+
 
